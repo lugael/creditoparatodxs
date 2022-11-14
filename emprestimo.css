@@ -1,0 +1,107 @@
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #358093;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fc9c72 !important;
+}
+.logo {
+ border: 1px;
+  width: 30px;
+  height: 30px;
+}
+
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+.jubortron{
+    background: #358093;
+    color: black;
+    padding: 250px 0px;
+    border-top: 10px;
+}
+.container-fluid  {
+  padding: 100px 50px;
+  background: #ffffff;
+}
+#empresa{
+        font-family: anton, sans-serif;
+        color: #ffffff;
+        padding: 50px;
+        font-size: 70px;
+    }
+#empresa2{
+        font-family: anton, sans-serif;
+        color: #f4511e;
+        padding: 0px;
+        border-bottom: 100px;
+        font-size: 0.5em;
+    }
+
+#principal{
+font-family: anton, sans-serif;
+color: #f4511e;
+font-size: 30px;
+padding: 50px;
+}
+#empes{
+    font-family: anton, sans-serif;
+    color: #f4511e;
+    font-size: 40px;
+    letter-spacing: 10px;
+
+
+}
+#cont{
+    font-family: anton, sans-serif;
+    color: #f4511e;
+    font-size: 40px;
+    letter-spacing: 10px;
+    border-bottom: 30px;
+}
+#r{
+    font-size: 20px;
+}
+#vezes{
+    font-size: 20px;
+}
+#resumo{
+    text-align: left;
+    margin-top: 2em;
+}
+#doc{
+    text-align: center;
+    display: inline-block;
+}
+#limpar{
+    border-radius:0.4em;
+    border-style:solid black;
+    background-color: #f3f3f3;
+    margin-top: 1em;
+
+}
+label {
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+}

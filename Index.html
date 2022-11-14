@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="emprestimo.css" rel="stylesheet"  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="Calculo.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <boby id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+     <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+      <a class="navbar-brand" ><img src="logoep.jpeg" class="logo"></a>
+        </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Sobre</a></li>
+                    <li><a href="#semprestimo">Empréstimo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <div   class="jubortron text-center">
+    <h1 id="empresa">CréditoParaTodxs <br><p id="empresa2">Empréstimo Pessoal</p><h1>
+
+    <div id="home" class="container-fluid text-center">
+        <br> <h1 id="principal"> Dinheiro na conta em menos de 24hrs</h1>
+        <h4 > Está negativado? precisa daquela ajuda financeira? precisa de ajudar em um novo projeto?</h4>
+        <h4>Vem conosco que temos a resposta para todas essas perguntas, venha conferir nosso empréstimo pessoal ideal para o que você procura!</h4>
+        <h4> dinheiro rápido e prático, sem burocracia. </h4><br><br>
+    </div>
+ <div id="semprestimo" class="container-fluid text-center">
+    <h1 id="empes">Empréstimo</h1>
+    <form action="#" id="formulario" >
+        <div class="cadastroCliente">
+            <p id="r">R$
+              <input type="number" id="valor" name="valor" placeholder="10.000" min="100" max="10000"  title="Somente Números" >
+              <select id="vVencimento" name="vVencimento">
+                <option value="5" selected>Dia 5</option>
+                <option value="7">Dia 7</option>
+                <option value="10">Dia 10</option>
+                <option value="15">Dia 15</option>
+                <option value="20">Dia 20</option>
+                <option value="25">Dia 25</option>
+              </select>
+            </p>
+         <p id="vezes">Quantas vezes:
+             <input type="number" id="nParcelas" name="nParcelas" data-ls-module="charCounter" maxlength="2" >
+              <span class="ls-label-text-prefix ls-ico-user"></span>
+              <span type="number" id="vParcela" name="vParcela">R$</span></p>
+              <span type="number" id="vTotal" name="vTotal"></span>
+              <label for="nomec" >Nome Completo</label><br>
+              <input type="text" id="nomec" name="nomec" placeholder="Digite seu nome"  required><br>
+              <label for="phone">Telefone</label><br>
+              <input type="text" id="phone" name="phone" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999" required><br>
+              <label for="emaile">E-mail</label><br>
+              <input type="email" id="emaile" name="emaile" placeholder="emprestimo@exemplo.com" required><br>
+              <label for="cpf">CPF</label><br>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="^(\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2}|\d{3}\.?\d{3}\.?\d{3}-?\d{2})$" title="Preencher corretamente Ex: 000.000.000-00" required><br>
+              <label for="chave">Chave Pix</label><br>
+              <input type="text" id="chave"  name="chave" placeholder="Exemplo(CPF:000.000.000-00)" required><br>
+              <label for="ddn">Data de Nascimento</label><br>
+              <input type="date" id="ddn" name="ddn" maxlength="10"  pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="1950-01-01" max="2003-12-30"  required><br>
+              <label for="doc">Documento (RG ou CNH)</label><br>
+              <input type="file" id="doc" name="doc"  required><br>
+          </div>
+
+          <div  class="resumo" id="resumo" name="resumo"></div>
+          <button id="limpar" onclick="limparCadastro()"style=>Enviar proposta</button>
+
+      </form>
+
+    </div>
+    <div id="contato" class="container-fluid text-center ">
+      <h1 id="cont" class="text-center">Contato</h1><br>
+      <div class="row">
+            <div >
+              <h3>Estamos disponiveis em canais digitais</h3>
+              <h3><span class="glyphicon glyphicon-phone"></span> (47)99214-8270</h3>
+              <h3><span class="glyphicon glyphicon-envelope"></span> creditoparatodxs@credtxs.com.br</h3>
+            </div>
+      </div>
+     </div>
+    </div>
+ </boby>
+</html>
